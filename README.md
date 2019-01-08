@@ -1,4 +1,4 @@
-#Light dimmer over home internet
+# Light dimmer over home internet
 
 This is the phase one of the project that I Developed before.
 
@@ -8,3 +8,5 @@ It is supported by Raspberry pi 3, which is a very small and usefull computer, y
 If you take a look, you can find some files.
 
 To make it works, you should install into Raspberry a web server called Webiopi.
+
+Now I'm working to inprove the user interface to make it feel more confortable and auto-adjustable to use in Smart devices.
