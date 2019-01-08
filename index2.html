@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="height = device-height, width = 420, user-scalable = no"> 
+	
+	<title>INMOTICA UNIVERSIDAD DISTRITAL</title><script type="text/javascript" src="/webiopi.js"></script>
+	<script type="text/javascript">
+	webiopi().ready(function() {
+	// Create a "Light" labeled button for GPIO 17
+                //var button = webiopi().createGPIOButton(14, "Gage");
+		//$("#controls").append(button);
+		
+		webiopi().setFunction(14, "out");		
+		webiopi().setFunction(2, "out");
+		webiopi().setFunction(3, "out");
+		webiopi().setFunction(4, "out");
+		webiopi().setFunction(15, "out");
+		webiopi().setFunction(17, "out");		
+		webiopi().setFunction(22, "out");
+		webiopi().setFunction(18, "out");
+		webiopi().setFunction(11, "out");
+		//var content, enc1;
+		//content = $("#content");
+
+		var button = webiopi().createGPIOButton(14, "Hall");
+		$("#hall").append(button);
+
+		var button = webiopi().createRatioSlider(8);
+		$("#hall").append(button);
+
+		var button = webiopi().createGPIOButton(2, "Comedor");
+		$("#comedor").append(button);
+
+		var button = webiopi().createRatioSlider(7);
+	        $("#comedor").append(button);
+
+		var button = webiopi().createGPIOButton(3, "Habitacion 1 ");
+		$("#habitacion1").append(button);
+	
+		var button = webiopi().createRatioSlider(25)
+		$("#habitacion1").append(button);
+		
+		var button = webiopi().createGPIOButton(4, "Habitacion2");
+		$("#habitacion2").append(button);
+
+		var button = webiopi().createRatioSlider(24);
+		$("#habitacion2").append(button);
+
+		var button = webiopi().createGPIOButton(15, "Pasillo");
+		$("#pasillo").append(button);
+
+		var button = webiopi().createRatioSlider(23);
+		$("#pasillo").append(button);
+
+		var button = webiopi().createGPIOButton(18, "Baño V.");
+//		var button = webiopi().createRatioSlider(18);
+		$("#bano1").append(button);
+		
+		var button = webiopi().createGPIOButton(11, "Baño P.");
+//		var button = webiopi().createRatioSlider(11);
+		$("#bano2").append(button);
+
+		var button = webiopi().createGPIOButton(17, "Hab.Ppal");
+		$("#habitacion_principal").append(button);
+
+		var button = webiopi().createRatioSlider(9);
+		$("#habitacion_principal").append(button);
+
+		var button = webiopi().createGPIOButton(22, "Cocina");
+		$("#cocina").append(button);
+
+		var button = webiopi().createRatioSlider(10);
+		$("#cocina").append(button);
+
+                webiopi().refreshGPIO(true);
+        });
+
+ </script>
+        <style type="text/css">
+                button {
+                        display: block;
+                        margin: 5px 5px 5px 5px;
+                        width: 60px;
+                        height: 20px;
+                        font-size: 10pt;
+                        font-weight: clear;
+                        color: white;
+
+ }
+
+        </style></head>
+<body style="background-repeat: no-repeat; background-position: 10px 30px; color: rgb(0, 0, 0); background-color: black; background-image: url(Apartamento2.png);" alink="#000099" link="#000099" vlink="#990099">
+        	<div id="hall" style="position: absolute; left: 250px; top: 155px;"></div>
+		<div id="hallN" style="position: absolute; left: 250px; top: 125px;"> HALL </div>
+		<div id="comedor" style="position: absolute; left: 400px; top: 500px;"></div>
+		<div id="comedorN" style="position: absolute; left: 400px; top:475px;">COMEDOR</div>
+		<div id="habitacion1" style="position: absolute; left: 650px; top: 200px;"></div>
+		<div id="habitacion1N" style="position: absolute; left: 650px; top: 175px;">HABITACION1 </div>
+		<div id="habitacion2" style="position: absolute; left: 950px; top: 200px;"></div>
+		<div id="habitacion2N" style="position: absolute; left: 950px; top: 175px;">HABITACION2</div>
+		<div id="pasillo" style="position: absolute; left: 650px; top: 375px;"></div>
+		<div id="pasilloN" style="position: absolute; left: 650px; top: 350px;">PASILLO</div>
+		<div id="bano1" style="position: absolute; left: 1050px; top: 350px;"></div>
+		<div id="baño1N" style="position: absolute; left: 1050px; top: 325px;">BAÑO VISITAS</div>
+		<div id="bano2" style="position: absolute; left: 1050px; top: 575px;"></div>
+		<div id="baño2N" style="position: absolute; left: 1050px; top: 550px;">BAÑO PRINCIPAL</div>
+		<div id="habitacion_principal" style="position: absolute; left: 750px; top: 600px;"> </div>
+		<div id="habitacion_principal2" style="position: absolute; left: 750px; top: 580px;">HABITACION PRINCIPAL</div>
+		<div id="cocina" style="position: absolute; left: 150px; top: 700px;"></div>
+		<div id="cocinaN" style="position: absolute; left: 180px; top: 675px;">COCINA</div>
+	<table style="text-align: left; background-color: white; width: 1256px; height: 34px;" border="1" cellpadding="2" cellspacing="2"><tbody><tr><td><a href="index.html">Inicio</a></td><td><a href="informacion.html">Informacion</a></td><td>Desarrollo</td><td>Quienes somos</td><td>Agradecimientos.</td></tr></tbody></table><div id="habitacion_principal" color="blue; "></div>
+	<div id="button" color=" blue;"></div>
+	
+	<div left:0px="" top="" 0px="" style="position: absolute; left: 1px; top: 1px;">
+	<br>
+	</div>
+
+</body></html>
